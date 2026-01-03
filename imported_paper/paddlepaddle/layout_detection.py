@@ -2,12 +2,13 @@
 Layout Detection Script for PaddleOCR
 
 IMPORTANT: This script requires Python 3.11 (PaddlePaddle doesn't support Python 3.14 yet).
-Run with: py -3.11 layout_detection.py
+Run with: py -3.11 layout_detection.py <image_path>
 """
 
 from paddleocr import LayoutDetection
 import cv2
 import numpy as np
+import argparse
 
 # Configuration options to try:
 # 1. Increase img_size for better detection of smaller regions
@@ -53,11 +54,16 @@ def preprocess_image(image_path, max_size=1920, enhance_contrast=True):
     
     return img
 
+# Parse command-line arguments
+parser = argparse.ArgumentParser(description='Layout Detection Script for PaddleOCR')
+parser.add_argument('image_path', help='Path to the input image file')
+args = parser.parse_args()
+
 # Method 1: Direct file path (simplest)
-# output = model.predict("sample.jpeg", batch_size=1)
+# output = model.predict(args.image_path, batch_size=1)
 
 # Method 2: Preprocess first (recommended for large or low-contrast images)
-image = preprocess_image("sample.jpeg", max_size=1920, enhance_contrast=False)
+image = preprocess_image(args.image_path, max_size=1920, enhance_contrast=True)
 output = model.predict(image, batch_size=1)
 
 # Process results
