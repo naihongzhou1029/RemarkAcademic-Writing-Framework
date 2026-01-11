@@ -100,25 +100,25 @@ GenAI產品和技術迭代迅速，為統一評估可行性標準，將會以202
 
 現今有許多知識密集性產業，只是輸出的型式不同而已。在個案遊戲公司就是一個鮮明的例子。拜科技進步所賜，製作遊戲已非高技術門檻的目標，成熟的遊戲引擎已可讓國中生就可以製作出一個可運行的遊戲。但若是要製作出高品質或是受歡迎的遊戲產品，這當中牽涉的環節就相當多。所謂的「環節」，就是各家遊戲公司或工作室所掌握的「內隱知識(Tacit Knowledge)」。
 
-不論是遊戲產業或是工程領域，通常會稱呼這類知識叫做「Know-How」。許多的研究都表明，有組織有效率的「知識管理流程(Knowledge Management Process,KMP)」，會給企業帶來更多的「創新能力(Innovation Creation, IC)」以及更好的「組織效能(Organization Performance, OP)」[@mardaniRelationshipKnowledgeManagement2018]。為什麼呢？除了讓組織裡的成員能在更好的基礎上，去思考解決問題的可能性，研究表明，更好的KMP通常代表著具有更創新的空間(J. Huang & Li, 2009)能讓成員去發展想法，更創新的想法就會有更高的機率去促成更好的OP[@grantKnowledgeManagementKnowledgeBased2006]。KMP, IC和OP三者的關係如[「圖1」](#fig:image1)：
+不論是遊戲產業或是工程領域，通常會稱呼這類知識叫做「Know-How」。許多的研究都表明，有組織有效率的「知識管理流程(Knowledge Management Process,KMP)」，會給企業帶來更多的「創新能力(Innovation Creation, IC)」以及更好的「組織效能(Organization Performance, OP)」[@mardaniRelationshipKnowledgeManagement2018]。為什麼呢？除了讓組織裡的成員能在更好的基礎上，去思考解決問題的可能性，研究表明，更好的KMP通常代表著具有更創新的空間[@huangMediatingEffectKnowledge2009]能讓成員去發展想法，更創新的想法就會有更高的機率去促成更好的OP[@grantKnowledgeManagementKnowledgeBased2006]。KMP, IC和OP三者的關係如[「圖1」](#fig:image1)：
 
 ![圖1[@mardaniRelationshipKnowledgeManagement2018]：](images/image24.png){#fig:image1}
 
-在這個概念下，「The effect of knowledge management practices on firm performance」(Palacios Marqués & José Garrigós Simón, 2006) 的研究也證實了這一點。良好的知識管理，是確實可以直接影響到企業的實際表現的，不論是在營收成長，股東滿意度，或是競爭優勢，都和知識管理的成熟程度有高度相關。
+在這個概念下，《The effect of knowledge management practices on firm performance》[@palaciosmarquesEffectKnowledgeManagement2006] 的研究也證實了這一點。良好的知識管理，是確實可以直接影響到企業的實際表現的，不論是在營收成長，股東滿意度，或是競爭優勢，都和知識管理的成熟程度有高度相關。
 
 ## 知識管理流程的本質
 
 據文獻，知識管理通常涉及知識的創造(Creation)[@popadiukInnovationKnowledgeCreation2006]，獲取(Acquisition)[@zhengImpactMultidimensionalSocial2025]及分享(Sharing)[@songKnowledgeSharingInnovation2008]。在網路基礎建設已十分發達的現在，「分享」是阻力最小的一環。各式各樣的瀏覽器(Browser)都可以讓文字和圖片簡單的複製貼上，影片也有足夠的頻寬可透過串流(Streaming)觀看。只要沒有權限的限制，我們可在一夜之間傳遞各種型態的知識給他人。
 
-在生成式人工智慧(Generative Artificial Intelligence, GAI)逐漸成熟的現在，只要有知識的原始內容(Raw Material)，可能是一篇純文字內容，或是一份「可攜列印格式文件(Portable Document Format, PDF)」，丟進ChatGPT或是Gemini，我們就可以更高的效率輸出成梳理過的文章，具象化的圖片，甚至是生動的影音內容，來分享知識的內容。僅管，這已開始造成某些行業的破壞及變革，成為企業裁員的理由，造成許多人失業，但這都是不可逆的趨勢。
+在GenAI技術逐漸成熟的現在，只要有知識的原始內容(Raw Material)，可能是一篇純文字內容，或是一份「可攜列印格式文件(Portable Document Format, PDF)」，丟進ChatGPT或是Gemini，我們就可以更高的效率輸出成梳理過的文章，具象化的圖片，甚至是生動的影音內容，來分享知識的內容。僅管，這已開始造成某些行業的破壞及變革，成為企業裁員的理由，造成許多人失業，但這都是不可逆的趨勢。
 
-但，知識管理並不是只有分享一環而已，GAI也不是真的什麼都能生成的出來，因為在「創造」和「獲取」這兩個任務，仍然是知識管理領域中最難克服的本質。不論是實務經驗，還是文獻研究都表明一個殘酷的事實，創造和獲取知識因通常難以和績效或薪酬直接掛鉤[@ajmalCriticalFactorsKnowledge2010]，導致員工並沒有積極的動力將研發過程的知識整理出來。許多知識可能是在過程中「創造」出來的，亦或是透過和專家訪談「獲取」而來的，但這都只是最終產品的中間產物而已。因為績效不問中間過程，這種供需極度失衡的矛盾現象，導致多數組織就算定了目標，有意圖想把知識管理做好，最終都是落得一個虎頭蛇尾的結局。企業主或管理階段能想到的都是”只要有知識庫，我們就可以如何如何…”，但”只要有知識庫”這件事才是問題。知識管理的困難其實不是「管理」，而是「知識」。
+但，知識管理並不是只有分享一環而已，GenAI也不是真的什麼都能生成的出來，因為在「創造」和「獲取」這兩個任務，仍然是知識管理領域中最難克服的本質。不論是實務經驗，還是文獻研究，都表明一個殘酷的事實，創造和獲取知識因通常難以和績效或薪酬直接掛鉤[@ajmalCriticalFactorsKnowledge2010]，導致員工並沒有積極的動力將研發過程的知識整理出來。許多知識可能是在過程中「創造」出來的，亦或是透過和專家訪談「獲取」而來的，但這都只是最終產品的中間產物而已。因為績效不問中間過程，這種供需極度失衡的矛盾現象，導致多數組織就算定了目標，有意圖想把知識管理做好，最終都是落得一個虎頭蛇尾的結局。企業主或管理階段能想到的都是”只要有知識庫，我們就可以如何如何…”，但”只要有知識庫”這件事才是問題。知識管理的困難其實不是「管理」，而是「知識」。
 
 ## 知識管理的等級
 
 知識管理其實不像是一個明確的目標，比較像是一個文化或是標準，因此國際標準組織(International Standard Organization, ISO)在2015年才在9001號標準中，新增了7.1.6的要求：
 
-組織應決定其流程運作和實現產品與服務符合性所需知識。這方面的知識應被保存,且可適用於需求的範圍。在處理變更需求和知識時,組織應考慮到其目前知識基礎,及決定如何獲得或使用所需的額外知識。
+> 組織應決定其流程運作和實現產品與服務符合性所需知識。這方面的知識應被保存,且可適用於需求的範圍。在處理變更需求和知識時,組織應考慮到其目前知識基礎,及決定如何獲得或使用所需的額外知識。
 
 但這也是一個概念而已。之後的研究比較有共識的部分，當屬A Model of Organisational Knowledge Management Maturity Based on People, Process, and Technology[@peeModelOrganisationalKnowledge2009]提出的5個成熟度等級，如[「表1」](#table_1)：
 
@@ -140,7 +140,7 @@ GenAI產品和技術迭代迅速，為統一評估可行性標準，將會以202
 
 ![圖2：Evolution of the techniques used for information extraction from unstructured documents[@baviskarEfficientAutomatedProcessing2021]](images/image28.png){#fig:image2}
 
-最早期是完全人工處理，後來導入了光學字元辨識(Optical Character Recognition,OCR)技術，再加上機器程序自動化(Robotics Processes Automation,RPA)後，僅管已經減少了不少人力，但對於資訊的頡取還是有不足之處，因為有的文件已毀損不清，有的內容語焉不詳。到了基於變換器的雙向編碼器表示技術（Bidirectional Encoder Representations from Transformers，BERT）這種基於自然語言處理（Natural Language Processing,NLP）的預訓練技術加入後，文字的處理品質有了極大的提升，文字幾乎已經不再是問題。真正困難的問題只剩下表格(Tables)類及訊息圖表(Figures, Diagrams and Infographics)類的資訊。這類的文件就非常依賴領域知識(Domain Knowledge)才能做正確的解讀，如金融領域類的知識萃取雖然比較成熟(Pejić Bach et al., 2019)。但技術上還沒有太大的突破，還是需要有不少的資料前處理(Text Pre-Processing),如[「圖3」](#fig:image3)：
+最早期是完全人工處理，後來導入了光學字元辨識(Optical Character Recognition,OCR)技術，再加上機器程序自動化(Robotics Processes Automation,RPA)後，僅管已經減少了不少人力，但對於資訊的頡取還是有不足之處，因為有的文件已毀損不清，有的內容語焉不詳。到了基於變換器的雙向編碼器表示技術（Bidirectional Encoder Representations from Transformers，BERT）這種基於自然語言處理（Natural Language Processing,NLP）的預訓練技術加入後，文字的處理品質有了極大的提升，文字幾乎已經不再是問題。真正困難的問題只剩下表格(Tables)類及訊息圖表(Figures, Diagrams and Infographics)類的資訊。這類的文件就非常依賴領域知識(Domain Knowledge)才能做正確的解讀，如金融領域類的知識萃取雖然比較成熟[@pejicbachTextMiningBig2019]。但技術上還沒有太大的突破，還是需要有不少的資料前處理(Text Pre-Processing),如[「圖3」](#fig:image3)：
 
 ![圖3：NAMED ENTITY RECOGNITION (NER) Workflow](images/image34.png){#fig:image3}
 
