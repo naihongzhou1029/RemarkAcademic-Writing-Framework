@@ -142,7 +142,7 @@ GenAI產品和技術迭代迅速，為統一評估可行性標準，將會以202
 
 ## 目前為止有無終極解法？
 
-早期的著作如《The data warehouse ETL toolkit: Practical techniques for extracting, cleaning, conforming, and delivering data》[@kimballDataWarehouseETL2004]，講述的都是純文字的資料處理(e.g. XML)或是資料庫的轉換。富比士的[統計](https://kommandotech.com/statistics/big-data-statistics/)統計也呼應了實務上的困境：企業中95%的資料都是無結構化(Unstructurized)型式的資料，也就是無法做為知識庫的資料。為了要能夠把無結構化的資料變成所謂的知識，各個時期的科技公司都有不同的做法，如「[@fig:image2]」。
+早期的著作如《The data warehouse ETL toolkit: Practical techniques for extracting, cleaning, conforming, and delivering data》[@kimballDataWarehouseETL2004]，講述的都是純文字的資料處理(e.g. XML)或是資料庫的轉換。富比士的[統計](https://kommandotech.com/statistics/big-data-statistics/)也呼應了實務上的困境：企業中95%的資料都是無結構化(Unstructurized)型式的資料，也就是無法做為知識庫的資料。為了要能夠把無結構化的資料變成所謂的知識，各個時期的科技公司都有不同的做法，如「[@fig:image2]」。
 
 ![Evolution of the techniques used for information extraction from unstructured documents[@baviskarEfficientAutomatedProcessing2021]](images/image28.png){#fig:image2 fig-pos="H"}
 
@@ -179,9 +179,9 @@ GenAI產品和技術迭代迅速，為統一評估可行性標準，將會以202
 
 ## 目標文件及其驗收標準
 
-本研究的目標遊戲是【宙斯】，在YouTube可以找到參考影片「[IGS宙斯悦华软件批发测试中](https://www.google.com/url?q=https://youtu.be/rZyODkoJsp0&sa=D&source=editors&ust=1765715299417045&usg=AOvVaw3h3Yk8MT6D7FfSYkFdE_ZQ)IGS宙斯悦华软件批发测试中」，遊戲規格書是「[《宙斯》規格](https://www.google.com/url?q=https://docs.google.com/spreadsheets/d/1XdilZVbW5-I5X8Mg_FVIxUekvLGPw4TG4eeABJsl2y4/edit?usp%3Dsharing&sa=D&source=editors&ust=1765715299417211&usg=AOvVaw0QLJot2DO1UeW7HYFUyUwJ)《宙斯》規格」。這類的遊戲在業界通常簡稱為老虎機(Slot Game Machine)，玩法也是變化萬千，但在本文研究範圍及資源有限，且驗證標準要儘量一致的情況下，我們就以這一款產品為目標。
+本研究的目標遊戲是【宙斯】，在YouTube可以找到參考影片「[IGS宙斯悦华软件批发测试中](https://www.google.com/url?q=https://youtu.be/rZyODkoJsp0&sa=D&source=editors&ust=1765715299417045&usg=AOvVaw3h3Yk8MT6D7FfSYkFdE_ZQ)」，遊戲規格書是「[《宙斯》規格](https://www.google.com/url?q=https://docs.google.com/spreadsheets/d/1XdilZVbW5-I5X8Mg_FVIxUekvLGPw4TG4eeABJsl2y4/edit?usp%3Dsharing&sa=D&source=editors&ust=1765715299417211&usg=AOvVaw0QLJot2DO1UeW7HYFUyUwJ)」。這類的遊戲在業界通常簡稱為老虎機(Slot Game Machine)，玩法也是變化萬千，但在本文研究範圍及資源有限，且驗證標準要儘量一致的情況下，我們就以這一款產品為目標。
 
-測試驗證的方向可簡單分為以下三類：純文字理解，內建圖像理解，以及表格內容理解。目前對一般用戶而言，像是Gemini或是ChatGPT這樣的產品是接受度最高的，而且這些產品都有兩種推論(Reasoning)深度，一個是快速反應，另一個即為深入思考。如字義，快速反應的思考深度就不會太深，深入思考的反應速度就不快。以我們要驗證的方向而言，我們就會優先以快速反應作為第一層測試，若理解有偏差，就會改用深入思考的模式再行測試。測試的產品先以Gemini來測試，也會在ChatGPT上測試。整個測試的流程就是「Gemini 2.5 Flash ⇒ Gemini 2.5 Pro ⇒ ChatGPT 5 ⇒ ChatGPT 5 Reasoning」。
+測試驗證的方向可簡單分為以下三類：純文字理解，內建圖像理解，以及表格內容理解。為了加速驗證假設是否正確，我們選擇用Gemini的便捷(Fast), 思考(Thinking)以及專業(Pro)三種模式，對同樣的問題進行實際測試。這三種模式主要是[思考深度的差異](https://vertu.com/lifestyle/gemini-3-flash-outperforms-pro-in-coding-while-pro-suffers-critical-memory-issues/)，同時也是速度和深度的差異。如字義，便捷模式的思考主要是類似「膝反射」式，完全依賴模型預訓練知識的回答。思考模式會針對問題進行反思推論，是否有不合邏輯之處，而專業模式是拆解問題，進行多層次，接近「第一性原理(The First Principles)」的推論及思考。透過這三個程度的驗證就可以知道，以目前大語言模型的能力，能有多少程度正確理解規格書上的內容，進而成為可供我們採取下一步行動的知識。
 
 ## 實際測試
 
@@ -447,7 +447,7 @@ Gemini 2.5 Flash 的回答如「[@fig:image6]」。完全正確。可見這部�
 
 ## 圖片知識萃取實驗
 
-聽起來很完美。那，「[@tbl:table5]」 的內容是怎麼來的？在「[三大研究原則](#h.40ehl55fllns)三大研究原則」的前提下，我們不可能要透過人力，把這些內容給一字一句打出來。像「[@fig:image17]」的內容，或許OCR還有可能幫得上忙，但若是像「[@fig:image22]」的內容，OCR絕對是無法”辨識”出什麼內容的。我們需要的不是「辨識」，我們需要的是「描述」的能力。我們得試試怎麼樣可以透過GenAI的能力，儘量正確的描述出圖片裡面的內容，一但能掌握到原則，就可以透過撰寫工具程式來批次處理更多的文件，滿足三大原則的要求。
+聽起來很完美。那，「[@tbl:table5]」 的內容是怎麼來的？在「[三大研究原則](#h.40ehl55fllns)」的前提下，我們不可能要透過人力，把這些內容給一字一句打出來。像「[@fig:image17]」的內容，或許OCR還有可能幫得上忙，但若是像「[@fig:image22]」的內容，OCR絕對是無法”辨識”出什麼內容的。我們需要的不是「辨識」，我們需要的是「描述」的能力。我們得試試怎麼樣可以透過GenAI的能力，儘量正確的描述出圖片裡面的內容，一但能掌握到原則，就可以透過撰寫工具程式來批次處理更多的文件，滿足三大原則的要求。
 
 ### 直接描述
 
@@ -511,7 +511,7 @@ Gemini 2.5 Flash 的回答如「[@fig:image6]」。完全正確。可見這部�
 
 ![AI無法轉換所有複雜路徑](images/image23.png){#fig:image57}
 
-如「[@fig:image57]」，AI直接明說了，它做不到。這究竟是怎麼回事呢？明明在「[產出「派彩線」資料](#h.dv3rlbjd1y7a)產出「派彩線」資料」那次的測試很順利呀，怎麼這次卻做不到了呢？其實這就是目前各AI模型普遍的軟肋：「上下文空間不足(Insufficient Context Length)」的問題。
+如「[@fig:image57]」，AI直接明說了，它做不到。這究竟是怎麼回事呢？明明在「[產出「派彩線」資料](#h.dv3rlbjd1y7a)」那次的測試很順利呀，怎麼這次卻做不到了呢？其實這就是目前各AI模型普遍的軟肋：「上下文空間不足(Insufficient Context Length)」的問題。
 
 ## 上下文空間工程(Context Engineering)
 
